@@ -8,3 +8,7 @@ def send_welcome(message):
     bot.reply_to(message, "Olá! Eu sou seu bot hospedado na Render!")
 
 bot.polling()
+
+@bot.message_handler(commands=['oi'])
+def diga_oi(mensagem):
+    bot.send_message(mensagem.chat.id, "Olá! Como posso ajudar?")
