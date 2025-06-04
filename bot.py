@@ -5,7 +5,7 @@ bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
-    bot.reply_to(message, "Olá! Eu sou seu bot hospedado na Render!")
+    bot.reply_to(message, "Olá! Eu sou seu bot que vai comer você!")
 
 bot.polling()
 
